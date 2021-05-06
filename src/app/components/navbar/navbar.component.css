@@ -1,0 +1,29 @@
+.titulo {
+  font-family: "Girassol", cursive;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.nav-edit {
+  background-color: #072146;
+}
+a {
+  color: white;
+  cursor: pointer;
+}
+a:hover {
+  color: #5bbef7;
+}
+.navbar-toggler {
+  border: 1px solid white;
+  color: white;
+}
+.nav-item {
+  font-size: 1.1rem;
+}
+.navbar-nav {
+  margin-left: 30px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+}

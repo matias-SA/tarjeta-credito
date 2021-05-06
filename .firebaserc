@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tarjetacredito-e736d": {
+      "hosting": {
+        "tarjetaCredito": [
+          "tarjetacredito-e736d"
+        ]
+      }
+    }
+  }
+}

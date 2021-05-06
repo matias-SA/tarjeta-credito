@@ -1,0 +1,19 @@
+.section {
+  background-image: url(../../../assets/hot-air-balloons-1373161_1920.jpg);
+  padding: 14em 0;
+}
+.box-1 {
+  padding: 15% 0 5%;
+}
+.box-2 {
+  background-color: rgba(0, 68, 129, 0.95);
+  padding: 30px;
+  color: white;
+  width: 50%;
+}
+h2 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.3rem;
+}

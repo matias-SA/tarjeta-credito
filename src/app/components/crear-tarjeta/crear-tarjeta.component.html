@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-body">
+    <h2 class="text-center mb-3">{{titulo}} <div *ngIf="loading" class="spinner-border float" role="status">
+    </div></h2>
+    <form [formGroup]="form" (ngSubmit)="guardarTarjeta()">
+      <div class="input-group mb-3">
+        <span class="input-group-text"><i class="fas fa-user-circle"
+            [class.green-icon]="this.form.get('titular').valid"
+            [class.red-icon]="this.form.get('titular').invalid && this.form.get('titular').touched"></i></span>
+        <input type="text" class="form-control" formControlName="titular" placeholder="Titular">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text"><i class="fas fa-credit-card"
+            [class.green-icon]="this.form.get('numeroTarjeta').valid"
+            [class.red-icon]="this.form.get('numeroTarjeta').invalid && this.form.get('numeroTarjeta').touched"></i></span>
+        <input type="text" class="form-control" formControlName="numeroTarjeta" maxlength="16"
+          placeholder="Numero de tarjeta">
+      </div>
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="input-group mb-3">
+            <span class="input-group-text"><i class="fas fa-calendar-alt"
+                [class.green-icon]="this.form.get('fechaExpiracion').valid"
+                [class.red-icon]="this.form.get('fechaExpiracion').invalid && this.form.get('fechaExpiracion').touched"></i></span>
+            <input type="text" class="form-control" formControlName="fechaExpiracion" maxlength="5" placeholder="MM/YY">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="input-group mb-3">
+            <span class="input-group-text"><i class="fas fa-key"
+                [class.green-icon]="this.form.get('cvv').valid"
+                [class.red-icon]="this.form.get('cvv').invalid && this.form.get('cvv').touched"></i></span>
+            <input type="password" class="form-control" formControlName="cvv" maxlength="3" placeholder="MM/YY">
+          </div>
+        </div>
+      </div>
+      <button type="submit" [disabled]="form.invalid" class="btn btn-success btn-lg w-100"> <i class="fas fa-database mr-2"></i>Aceptar</button>
+    </form>
+  </div>
+</div>
