@@ -1,5 +1,9 @@
 # TarjetaCredito
 
+Proyecto que simula una pagina web de un banco en el cual podes registrar una tarjeta completando todo el formulario.
+
+Par este proyecto utilice Angular 10 y Firebase para guardar los datos.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.3.
 
 ## Development server
